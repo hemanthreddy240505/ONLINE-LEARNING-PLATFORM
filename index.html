@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Learning Platform</h1>
+  </header>
+
+  <main>
+    <section id="video-section">
+      <h2>Video Lesson</h2>
+      <video id="lesson-video" controls>
+        <source src="lesson.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="quiz-section">
+      <h2>Quiz</h2>
+      <form id="quiz-form">
+        <p>Question: What is the capital of France?</p>
+        <input type="radio" id="paris" name="answer" value="Paris">
+        <label for="paris">Paris</label><br>
+        <input type="radio" id="london" name="answer" value="London">
+        <label for="london">London</label><br>
+        <input type="radio" id="berlin" name="answer" value="Berlin">
+        <label for="berlin">Berlin</label><br>
+        <button type="button" onclick="submitQuiz()">Submit</button>
+      </form>
+      <p id="quiz-result"></p>
+    </section>
+
+    <section id="progress-section">
+      <h2>Progress</h2>
+      <p>Lesson Progress: <span id="progress">0%</span></p>
+    </section>
+  </main>
+
+  <!-- <footer>
+    <p>&copy; 2025 Online Learning Platform</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
